@@ -1,11 +1,10 @@
-html{
-	scroll-behavior: smooth;
-}
 
 body{
 	margin: 0;
 	padding: 0;
 	font-family: sans-serif;
+	scroll-behavior:smooth;
+
 
 }
 nav{
@@ -16,8 +15,8 @@ nav{
 	 align-items: center;
 	 flex-wrap: wrap;
 	 width: 100%;
-	 height: 70px;
-	 background:#d4d7de;
+	 height: 60px;
+	 background:gray;
 	z-index: 1;
 	position: fixed;
 
@@ -42,6 +41,7 @@ display: flex;
 justify-content: center;
 list-style: none;
 margin-right: 15%;
+position: fixed;
 
 
 }
@@ -50,23 +50,37 @@ li{
 
 	float: left;
 }
-
+.navbar li a:hover{
+  background: #fff;
+  color: #333;
+}
 a{
 
 	margin: 15px;
 	text-decoration: none;
-	color: #000;
-	text-transform: uppercase;;
+	color: #fff;
+	text-transform: uppercase;
+
 
 }
 
 .banner{
 
 	position: relative;
-	background-image: url(mlege.jpeg);
+
 }
 
 #Home{
+
+	height: 700px;
+	background-image: url(IMG-6872.jpg);
+	background-size:cover;
+     background-color: white ; 
+	display: inline-block;
+	width: 100%
+}
+
+#Skills{
 
 	height: 700px;
 
@@ -74,13 +88,69 @@ a{
 	width: 100%
 }
 
-#About{
-	height: 700px;
-	display: inline-block;
-	width: 100%;
+
+
 
 }
 
+h3{
+
+	font-family: "Ubuntu";
+}
+
+#Contact{
+	height: 700px;
+	background-color: blue;
+	display: inline-block;
+	width: 100%;
+
+
+}
+
+
+
 nav.Hover{
 	color: gray;
+}
+
+.page-footer{
+
+	 position: fixed;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.page-footer a{
+	display: block;
+  text-align: center;
+  padding: 16px;
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 20px;
+}
+
+.page-footer a:hover{
+	 background-color: #000;
+}
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+#myBtn:hover {
+  background-color: #555;
 }
